@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tidb_autoid"
+version = "0.0.1"
+authors = [
+  { name="bohnen", email="tadatoshi.sekiguchi@pingcap.com" },
+]
+description = "A small Util to get the next auto id from TiDB"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "PyMySQL==1.1.0",
+  "python-dotenv==1.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/bohnen/tidb-autoid"
+Issues = "https://github.com/bohnen/tidb-autoid/issues"
+
+[project.scripts]
+autoids = "tidb_autoid:list_next_autoids"

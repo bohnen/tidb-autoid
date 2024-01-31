@@ -1,0 +1,6 @@
+TIDB_HOST='127.0.0.1'
+TIDB_PORT='4000'
+TIDB_USER='root' 
+TIDB_PASSWORD=''
+TIDB_DB_NAME='test'
+# CA_PATH='{ssl_ca}' 
